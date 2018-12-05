@@ -1,7 +1,7 @@
 # Ce dossier doit contenir :
 
 Rapport de modélisation (contenant les explications pour les DP et les diagrammes) :
-*"Rapport de modélisation.docx"
+* "Rapport de modélisation.docx"
 
 MCD :
 *"mcd.png"
