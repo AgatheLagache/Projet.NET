@@ -1,4 +1,17 @@
 Ce dossier doit contenir :
 
+Rapport de modélisation :
 - "Rapport de modélisation.docx"
+
+MCD :
+- "mcd.png"
+
+Scripts SQL (en version texte et en version sql pour l'implanter directement) :
+- "script_bdd group_ALAK.sql"
+- "script_bdd group_ALAK.txt"
+
+Diagramme de cas d'utilisation :
+- "UseCaseDiagram.png"
+
+Diagrammes d'activité :
 - 
