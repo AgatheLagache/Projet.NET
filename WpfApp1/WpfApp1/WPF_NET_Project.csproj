@@ -69,6 +69,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\IRestaurantModel.cs" />
+    <Compile Include="Model\IScenario.cs" />
+    <Compile Include="Model\RestaurantModel.cs" />
+    <Compile Include="Model\Scenario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +97,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\DALandBLL\Business\Mapper\" />
+    <Folder Include="Model\DALandBLL\Persistance\DAO\" />
+    <Folder Include="Model\DALandBLL\Service\" />
+    <Folder Include="Model\DinnerRoom\" />
+    <Folder Include="Model\Kitchen\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
