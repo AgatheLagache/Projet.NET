@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Résultats" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Pause" VerticalAlignment="Top" FontSize="16" Margin="19,19,0,0" Height="29" HorizontalAlignment="Left" Width="100"/>
+        <Button Content="Reprise" VerticalAlignment="Top" FontSize="16" Margin="19,65,0,0" Height="29" HorizontalAlignment="Left" Width="100
+                "/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="140,0,0,0">
+            <TextBox TextWrapping="Wrap" Text="TextBox" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="1,1,-1,-1" FontSize="16"/>
+        </Border>
     </Grid>
 </Window>
