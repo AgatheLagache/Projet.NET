@@ -24,5 +24,21 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Start_Simulation_Click(object sender, RoutedEventArgs e)
+        {
+            Results results = new Results();
+            results.Show();
+        }
+
+        private void Nb_Clients_Random_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Nb_Waiters_Random_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

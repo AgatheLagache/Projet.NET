@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Paramètres" Height="450" Width="648.611">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="20,31,0,0" TextWrapping="Wrap" Text="Nombre de clients" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,74,0,0" TextWrapping="Wrap" Text="Nombre de serveurs" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="Nb_Clients_Choice" HorizontalAlignment="Left" Height="23" Margin="190,30,0,0" TextWrapping="Wrap" Text="Saisissez un nombre entre 1 et 100..." VerticalAlignment="Top" Width="278" FontSize="16"/>
+        <TextBox x:Name="Nb_Waiters_Choice" HorizontalAlignment="Left" Height="23" Margin="190,73,0,0" TextWrapping="Wrap" Text="Saisissez un nombre entre 1 et 100..." VerticalAlignment="Top" Width="278" FontSize="16"/>
+        <Button x:Name="Start_Simulation" Content="Lancer la simulation" Margin="221,364,221,0" FontSize="16" Height="25" VerticalAlignment="Top" Click="Start_Simulation_Click"/>
+        <Button x:Name="Nb_Clients_Random" Content="Valeur aléatoire" Margin="485,29,0,0" VerticalAlignment="Top" FontSize="16" HorizontalAlignment="Left" Width="126" Click="Nb_Clients_Random_Click"/>
+        <Button x:Name="Nb_Waiters_Random" Content="Valeur aléatoire" HorizontalAlignment="Left" Margin="485,72,0,0" VerticalAlignment="Top" Width="126" FontSize="16" Click="Nb_Waiters_Random_Click"/>
+
     </Grid>
 </Window>
