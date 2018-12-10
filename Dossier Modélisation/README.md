@@ -5,15 +5,18 @@
 * "Rapport de modélisation.docx"
 
 
-##### MCD :
-* "mcd.png"
-* "mld.png"
-* "bdd_ProjetNET_ALAK.mcd"
+##### BDD :
+* "mcd.png" (old version)
+* "mld.png" (old version)
+* "bdd_ProjetNET_ALAK.mcd" (old version)
+* "mcd2.png"
+* "mld2.png"
 
 
-##### Scripts SQL (en version texte et en version sql pour l'implanter directement) :
-* "script_bdd group_ALAK.sql"
-* "script_bdd group_ALAK.txt"
+##### Scripts SQL :
+* "script_bdd group_ALAK.sql" (old version)
+* "script_bdd group_ALAK.txt" (old version)
+* "script_db_net_project.sql"
 
 
 ##### Diagramme de cas d'utilisation :
