@@ -8,11 +8,11 @@ using WpfApp1.Model;
 
 namespace WpfApp1.View
 {
-    class RestaurantView : IRestaurantView, IRestaurantController
+    class RestaurantView : IRestaurantView
     {
         public IScenario scenario { get => scenario; set => scenario = value; }
 
-        RestaurantView(IScenario scenario)
+        public RestaurantView()
         {
 
         }
