@@ -160,6 +160,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\DinnerRoom\Commis.cs" />
+    <Compile Include="Model\DinnerRoom\Customer.cs" />
+    <Compile Include="Model\DinnerRoom\CustomerDecorator.cs" />
+    <Compile Include="Model\DinnerRoom\Easygoing.cs" />
+    <Compile Include="Model\DinnerRoom\GroupCustomer.cs" />
+    <Compile Include="Model\DinnerRoom\HeadWaiter.cs" />
+    <Compile Include="Model\DinnerRoom\Hurry.cs" />
+    <Compile Include="Model\DinnerRoom\ICustomer.cs" />
+    <Compile Include="Model\DinnerRoom\MaitreHotel.cs" />
+    <Compile Include="Model\DinnerRoom\Normal.cs" />
+    <Compile Include="Model\DinnerRoom\Table.cs" />
+    <Compile Include="Model\DinnerRoom\Waiter.cs" />
     <Compile Include="Model\DALandBLL\Business\Acteur.cs" />
     <Compile Include="Model\DALandBLL\Business\Action.cs" />
     <Compile Include="Model\DALandBLL\Business\Mapper\ActionMapper.cs" />
@@ -179,6 +191,11 @@
     <Compile Include="Model\DALandBLL\Service\ScenarioService.cs" />
     <Compile Include="Model\IRestaurantModel.cs" />
     <Compile Include="Model\IScenario.cs" />
+    <Compile Include="Model\Kitchen\Chef.cs" />
+    <Compile Include="Model\Kitchen\CommisChef.cs" />
+    <Compile Include="Model\Kitchen\Cook.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\PersonFactory.cs" />
     <Compile Include="Model\RestaurantModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -209,6 +226,9 @@
   <ItemGroup>
     <Folder Include="Model\DinnerRoom\" />
     <Folder Include="Model\Kitchen\" />
+    <Folder Include="Model\DALandBLL\Business\Mapper\" />
+    <Folder Include="Model\DALandBLL\Persistance\DAO\" />
+    <Folder Include="Model\DALandBLL\Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
