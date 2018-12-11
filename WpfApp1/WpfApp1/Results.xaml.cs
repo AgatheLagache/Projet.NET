@@ -23,6 +23,7 @@ namespace WpfApp1
         public Results()
         {
             InitializeComponent();
+            Results_Textbox.IsEnabled = false;
         }
 
         public Results GetResults()
