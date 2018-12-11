@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WpfApp1.Controller;
+using WpfApp1.Model;
 
 namespace WpfApp1.View
 {
     class RestaurantView : IRestaurantView, IRestaurantController
     {
-        public IRestaurant Restaurant { get => restaurant; set => restaurant = value; }
+        public IScenario scenario { get => scenario; set => scenario = value; }
 
-        RestaurantView(IRestaurant restaurant)
+        RestaurantView(IScenario scenario)
         {
 
         }

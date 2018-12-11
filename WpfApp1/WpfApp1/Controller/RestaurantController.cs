@@ -19,14 +19,14 @@ namespace WpfApp1.Controller
         /* Instancie un nouveau controleur du restaurant */
         RestaurantController(IRestaurantModel restaurantModel, IRestaurantView restaurantView)
         {
-            this.setRestaurantView();
-            this.setRestaurantModel();
+            //this.setRestaurantView();
+            //this.setRestaurantModel();
         }
 
         /* Récupère le model du restaurant et le retourne */
         public IRestaurantController getRestaurantModel()
         {
-            return this.restaurantModel;
+            return null;
         }
 
 
@@ -38,7 +38,7 @@ namespace WpfApp1.Controller
         /* Récupère la vue du restaurant et l retourne */
         public IRestaurantController getRestaurantView()
         {
-            return this.restaurantView;
+            return null;
         }
 
         private void setRestaurantView(IRestaurantView view)
