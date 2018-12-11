@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WpfApp1.View
 {
-    class RestaurantView : IRestaurantView/*, IRestaurantController*/
+    class RestaurantView : IRestaurantView, IRestaurantController
     {
-        /*public Restaurant Restaurant { get => restaurant; set => restaurant = value; }
+        public Restaurant Restaurant { get => restaurant; set => restaurant = value; }
 
         RestaurantView(Restaurant restaurant)
         {
@@ -18,6 +18,6 @@ namespace WpfApp1.View
         start_Scenario()
         {
 
-        }*/
+        }
     }
 }
