@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp1.View
 {
-    interface IRestaurantView
+    public interface IRestaurantView
     {
     }
 }

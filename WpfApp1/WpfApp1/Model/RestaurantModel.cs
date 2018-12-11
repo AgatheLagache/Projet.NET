@@ -9,7 +9,7 @@ namespace WpfApp1.Model
     public class RestaurantModel : IRestaurantModel
     {
 
-        RestaurantModel()
+        public RestaurantModel()
         {
 
         }

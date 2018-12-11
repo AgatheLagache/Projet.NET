@@ -15,18 +15,20 @@ namespace WpfApp1.Controller
 
         /* déclaration de la vue restaurant de l'interface IRestaurantView */
         private IRestaurantView restaurantView;
+        private IScenario scenario;
 
         /* Instancie un nouveau controleur du restaurant */
-        RestaurantController(IRestaurantModel restaurantModel, IRestaurantView restaurantView)
+        public RestaurantController(IRestaurantModel restaurantModel, IRestaurantView restaurantView)
         {
-            //this.setRestaurantView();
-            //this.setRestaurantModel();
+            this.setRestaurantView(restaurantView);
+            this.setRestaurantModel(restaurantModel);
         }
 
+
         /* Récupère le model du restaurant et le retourne */
-        public IRestaurantController getRestaurantModel()
+        public IRestaurantModel getRestaurantModel()
         {
-            return null;
+            return this.restaurantModel;
         }
 
 
@@ -35,10 +37,10 @@ namespace WpfApp1.Controller
             this.restaurantModel = model;
         }
 
-        /* Récupère la vue du restaurant et l retourne */
-        public IRestaurantController getRestaurantView()
+        /* Récupère la vue du restaurant et la retourne */
+        public IRestaurantView getRestaurantView()
         {
-            return null;
+            return this.restaurantView;
         }
 
         private void setRestaurantView(IRestaurantView view)
@@ -48,12 +50,17 @@ namespace WpfApp1.Controller
 
         public void startScenario()
         {
+            scenario.initializeScenario(1);
+        }
 
+        public void play()
+        {
+            this.startScenario();
         }
 
         public void pause()
         {
-            //mythread.
+
         }
 
         public void replay()
@@ -61,9 +68,8 @@ namespace WpfApp1.Controller
 
         }
 
-        public void speedUp()
-        {
-
-        }
+        //public void speedUp()
+        //{
+        //}
     }
 }
