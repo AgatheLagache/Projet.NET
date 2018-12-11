@@ -6,7 +6,6 @@ namespace WpfApp1.Model.DALandBLL.Persistance.DAO
     public class ScenarioDAO
     {
         public int id { get; set; }
-
         public string titre { get; set; }
     }
 }

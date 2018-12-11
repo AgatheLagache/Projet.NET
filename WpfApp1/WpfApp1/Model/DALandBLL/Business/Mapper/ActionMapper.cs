@@ -12,7 +12,7 @@ namespace WpfApp1.Model.DALandBLL.Business.Mapper
             {
                 id = value.id,
                 description = value.description,
-                id_Acteur = ActeurMapper.Map(value.Acteur).id
+                acteurId = ActeurMapper.Map(value.Acteur).id
             };
         }
 

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 using WpfApp1.Model.DALandBLL.Business;
 using WpfApp1.Model.DALandBLL.Business.Mapper;
@@ -49,12 +50,12 @@ namespace WpfApp1.Model.DALandBLL.Service
 
         public List<ActionScenario> GetByActionId(int id_action)
         {
-            return (from c in context.ActionScenario where c.id_Action == id_action select ActionScenarioMapper.Map(c)).ToList();
+            return (from c in context.ActionScenario.Include(i => i.Action).Include(i => i.Action.Acteur).Include(i => i.Scenario) where c.actionId == id_action select ActionScenarioMapper.Map(c)).ToList();
         }
 
         public List<ActionScenario> GetByScenarioId(int id_scenario)
         {
-            return (from c in context.ActionScenario where c.id_Scenario == id_scenario select ActionScenarioMapper.Map(c)).ToList();
+            return (from c in context.ActionScenario.Include(i => i.Action).Include(i => i.Action.Acteur).Include(i => i.Scenario) where c.scenarioId == id_scenario select ActionScenarioMapper.Map(c)).ToList();
         }
     }
 }

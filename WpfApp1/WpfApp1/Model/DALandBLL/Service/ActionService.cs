@@ -3,6 +3,7 @@ using System.Linq;
 using WpfApp1.Model.DALandBLL.Persistance;
 using WpfApp1.Model.DALandBLL.Business.Mapper;
 using WpfApp1.Model.DALandBLL.Business;
+using Microsoft.EntityFrameworkCore;
 
 namespace WpfApp1.Model.DALandBLL.Service
 {
@@ -54,7 +55,7 @@ namespace WpfApp1.Model.DALandBLL.Service
 
         public List<Action> GetByActeurId(int id_act)
         {
-            return (from c in context.Action where c.id_Acteur == id_act select ActionMapper.Map(c)).ToList();
+            return (from c in context.Action.Include(i => i.Acteur) where c.acteurId == id_act select ActionMapper.Map(c)).ToList();
         }
     }
 }

@@ -11,8 +11,8 @@ namespace WpfApp1.Model.DALandBLL.Business.Mapper
             return new ActionScenarioDAO
             {
                 ordre = value.ordre,
-                id_Action = ActionMapper.Map(value.Action).id,
-                id_Scenario = ScenarioMapper.Map(value.Scenario).id
+                actionId = ActionMapper.Map(value.Action).id,
+                scenarioId = ScenarioMapper.Map(value.Scenario).id
             };
         }
 

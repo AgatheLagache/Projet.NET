@@ -6,7 +6,6 @@ namespace WpfApp1.Model.DALandBLL.Persistance.DAO
     public class ActeurDAO
     {
         public int id { get; set; }
-
         public string role { get; set; }
     }
 }

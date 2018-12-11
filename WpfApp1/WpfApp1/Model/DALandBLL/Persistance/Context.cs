@@ -12,7 +12,7 @@ namespace WpfApp1.Model.DALandBLL.Persistance
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ActionScenarioDAO>().HasKey(i => new { i.id_Scenario, i.id_Action });
+            modelBuilder.Entity<ActionScenarioDAO>().HasKey(i => new { i.actionId, i.scenarioId });
         }
 
         public DbSet<ActeurDAO> Acteur { get; set; }
