@@ -34,6 +34,20 @@ namespace WpfApp1
 
         private void Start_Simulation_Click(object sender, RoutedEventArgs e)
         {
+            if (int.TryParse(Nb_Fast_Clients_Choice.Text, out Nb_Fast_Clients) 
+                && int.TryParse(Nb_Ordinary_Clients_Choice.Text, out Nb_Ordinary_Clients) 
+                && int.TryParse(Nb_Slow_Clients_Choice.Text, out Nb_Slow_Clients) 
+                && int.TryParse(Nb_Waiters_Choice.Text, out Nb_Waiters)
+                && int.TryParse(Nb_Cooks_Choice.Text, out Nb_Cooks))
+            {
+                
+            }
+            else
+            {
+                Nb_Clients_Random_Click(sender, e);
+                Nb_Waiters_Random_Click(sender, e);
+                Nb_Cooks_Random_Click(sender, e);
+            }
             Results results = new Results();
             results.Show();
         }
