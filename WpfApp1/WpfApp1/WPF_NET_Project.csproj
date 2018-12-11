@@ -199,6 +199,7 @@
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\PersonFactory.cs" />
     <Compile Include="Model\RestaurantModel.cs" />
+    <Compile Include="Model\History.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -225,13 +226,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\DinnerRoom\" />
-    <Folder Include="Model\Kitchen\" />
-    <Folder Include="Model\DALandBLL\Business\Mapper\" />
-    <Folder Include="Model\DALandBLL\Persistance\DAO\" />
-    <Folder Include="Model\DALandBLL\Service\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

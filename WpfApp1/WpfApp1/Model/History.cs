@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace WpfApp1.Model
+﻿namespace WpfApp1.Model
 {
-    public class Scenario : IScenario
+    public class History : IScenario
     {
         private int scenario;
 
-        Scenario()
+        private History()
         {
             this.setScenario(this.chooseScenario());
             this.initializeScenario(this.scenario);
