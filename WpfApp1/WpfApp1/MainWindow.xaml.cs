@@ -20,6 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        Results results = new Results();
         Random nb_random = new Random();
         int Nb_Fast_Clients = 1;
         int Nb_Ordinary_Clients = 1;
@@ -48,8 +49,9 @@ namespace WpfApp1
                 Nb_Waiters_Random_Click(sender, e);
                 Nb_Cooks_Random_Click(sender, e);
             }
-            Results results = new Results();
-            results.Show();
+            //Results results = new Results();
+            //results.Show();
+            results.GetResults();
         }
 
         private void Nb_Clients_Random_Click(object sender, RoutedEventArgs e)
