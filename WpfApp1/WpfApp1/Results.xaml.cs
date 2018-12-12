@@ -35,5 +35,10 @@ namespace WpfApp1
             results.Show();
             return results;
         }
+
+        private void Results1_Closed(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
     }
 }
