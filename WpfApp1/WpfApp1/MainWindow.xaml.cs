@@ -122,5 +122,10 @@ namespace WpfApp1
                 Check_Int_Validity(Nb_Cooks_Choice.Text, Nb_Cooks);
             }
         }
+
+        private void Scenario_Random_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
