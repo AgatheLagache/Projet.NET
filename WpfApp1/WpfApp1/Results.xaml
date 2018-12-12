@@ -11,7 +11,7 @@
         <Button Content="Reprise" VerticalAlignment="Top" FontSize="16" Margin="19,65,0,0" Height="29" HorizontalAlignment="Left" Width="100
                 "/>
         <Border BorderBrush="Black" BorderThickness="1" Margin="140,0,0,0">
-            <TextBox TextWrapping="Wrap" Text="TextBox" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="1,1,-1,-1" FontSize="16"/>
+            <TextBox x:Name="Results_Textbox" TextWrapping="Wrap" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="1,1,-1,-1" FontSize="16" ScrollViewer.CanContentScroll="True"/>
         </Border>
     </Grid>
 </Window>

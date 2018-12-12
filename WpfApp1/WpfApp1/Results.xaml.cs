@@ -19,9 +19,21 @@ namespace WpfApp1
     /// </summary>
     public partial class Results : Window
     {
+        public static Results results = null;
         public Results()
         {
             InitializeComponent();
+            Results_Textbox.IsEnabled = false;
+        }
+
+        public Results GetResults()
+        {
+            if (results == null)
+            {
+                results = new Results();
+            }
+            results.Show();
+            return results;
         }
     }
 }
