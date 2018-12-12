@@ -11,7 +11,7 @@ namespace WpfApp1
 {
     public class Start
     {
-        public static void Main()
+        public static void start()
         {
             IRestaurantModel restaurantModel = new RestaurantModel();
             IRestaurantView restaurantView = new RestaurantView();
